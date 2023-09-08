@@ -18,7 +18,7 @@ describe CaesarCipher do
       expect(CaesarCipher.cipher('Hello WORLD', 13)).to eql('Uryyb JBEYQ')
     end
 
-    it 'respect punctuation' do
+    it 'respects punctuation' do
       expect(CaesarCipher.cipher('hello, world!', 13)).to eql('uryyb, jbeyq!')
     end
   end
